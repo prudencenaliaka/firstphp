@@ -12,7 +12,6 @@
     <div class="container">
     <form class="was-validated"  action='connect.php' method='post' accept-charset='UTF-8'>
     <h2>Create Account</h2>
-
     <div class="form-group">
       <label>username:</label>
     <input type='text' name='email' id='username' maxlength="50" required/>
