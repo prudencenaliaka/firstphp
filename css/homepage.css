@@ -1,0 +1,203 @@
+.footer-copyright{
+margin-bottom: 0px;
+}
+.div7{
+  float:left;
+}
+.hed1,.span1{
+  color: hotpink;
+}
+header{
+  width:100%;
+}
+
+a:hover{
+  color: white;
+}
+.div4{
+  margin-left: 200px;
+  margin-bottom:300px;
+  font-size: 20px;
+}
+.div4 input[type=text], input[type=tel],textarea{
+  background-color: blue;
+  border: 2px solid hotpink;
+  border-radius: 25px;
+  color: white;
+}
+nav{
+  margin-bottom: 30px;
+}
+nav a{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 2px solid blue;
+  margin-left: 70px;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.div4{
+  margin-top: 30px;
+  background-color: blue;
+  width: 800px;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  padding-top: 30px;
+}
+.sec1{
+  width: 800px;
+}
+table{
+  background-color: white;
+  color: black;
+}
+th,td{
+  color: black;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.div5{
+  width: 600px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+.div1{
+  float:left;
+  width: 400px;
+  height:360px;
+  background-color: blue;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+.div2{
+  float: right;
+  width: 400px;
+  height:360px;
+  background-color: blue;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+h4{
+  color: hotpink;
+}
+h2,h3{
+  color: hotpink;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 6.5s steps(50, end),
+    blink-caret .95s step-end infinite;
+}
+hover:: h2,h3{
+    color: white;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+p span{
+  color: hotpink;
+
+}
+p,h5{
+color: white;
+line-height: 25px;
+}
+h3{
+  text-align: center;
+}
+.slider{
+  overflow: hidden;
+  height:400;
+  width:300;
+}
+body{
+  background: #121212;
+}
+.main{
+  background: #121212;
+  width:70%;
+  margin: 0 auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.slider figure div{
+  float:left;
+  width:20%;
+}
+.slider figure img{
+  float:left;
+  width:100%;
+}
+.slider figure{
+  position:relative;
+  width:500%;
+  margin: 0px;
+  left: 0;
+  animation: 30s slider infinite;
+}
+@keyframes slider {
+  0%{
+ left: 0%;
+  }
+  10%{
+  left: 0%;
+  }
+  12%{
+  left: -100%;
+  }
+  24%{
+    left: -100%;
+  }
+  34%{
+    left: -200%;
+  }
+  36%{
+      left: -200%;
+  }
+  46%{
+    left: -300%;
+  }
+  48%{
+  left: -300%;
+  }
+  58%{
+  left: -400%;
+  }
+  60%{
+    left: -400%;
+  }
+  68%{
+    left: -300%;
+  }
+  72%{
+    left: -300%;
+  }
+  82%{
+    left:-200%;
+  }
+  84%{
+  left: -200%;
+  }
+  94%{
+    left:-100%
+  }
+  96%{
+  left: 0%;
+  }
+}
