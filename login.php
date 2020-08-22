@@ -9,7 +9,7 @@
   </head>
   <body >
   <div class="container">
-<form class="" action="homepage.php" method="post">
+<form class="" action="index.html" method="post">
 <h2>login</h2>
 <div class="form-group">
   <label>username:</label>
@@ -19,7 +19,7 @@
   <label>password:</label>
 <input type='password' name='password' id='password' maxlength="50"/>
 </div>
-<button type='submit' name='submit' value='submit'/><a href="homepage.php">submit</a></button>
+<button type='submit' name='submit' value='submit'/><a href="index.html">submit</a></button>
 </form>
 </div>
   </body>
