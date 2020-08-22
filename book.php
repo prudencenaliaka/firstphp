@@ -12,7 +12,7 @@ $conn = mysqli_connect($servername,$dBUsername,$dBPassword,$dBName);
 }
 else {
   echo"Please fill the empty fields";
-  header("location: ../firstphp/bookNow.php?erroremptyfieldsusername.".$username."&route".$route."&message".$message."&tel".$tel);
+  header("location: ../firstphp/bookNow.html?erroremptyfieldsusername.".$username."&route".$route."&message".$message."&tel".$tel);
   exit();
 }
 if(!$conn){
@@ -26,7 +26,7 @@ else {
     }
     else{
       echo "Error: " . $sql . "<br>" . $conn->error;
-      header("location: ../firstphp/bookNow.php?succsessfulyregistered");
+      header("location: ../firstphp/bookNow.html?succsessfulyregistered");
       exit();
     }}
 ?>
