@@ -11,7 +11,7 @@ $passwordRepeat = $_POST['passwordRepeat'];
     $conn =mysqli_connect($servername,$dBUsername,$dBPassword,$dBName);
   }
   else {
-    header("location: ../firstphp/index.php?erroremptyfieldsusername.".$username."&email".$email."&password".$password."&passwordRepeat".$passwordRepeat);
+    header("location: ../firstphp/signup.html?erroremptyfieldsusername.".$username."&email".$email."&password".$password."&passwordRepeat".$passwordRepeat);
     echo"Please fill the empty fields";
     exit();
   }
@@ -29,26 +29,26 @@ $passwordRepeat = $_POST['passwordRepeat'];
           echo "Error: " . $sql . "<br>" . $conn->error;
         }
         if($password !== ($passwordRepeat)){
-          header("location: ../firstphp/index.php?errorpasswordcheckusername.".$username."&email".$email);
+          header("location: ../firstphp/signup.html?errorpasswordcheckusername.".$username."&email".$email);
           exit();
         }
         else if (!filter_var($email , FILTER_VALIDATE_EMAIL)&& !preg_match("/^(a-ZA-ZO-Z9)*$/", $username)) {
-          header("location: ../firstphp/index.php?errorinvalidemailusername.");
+          header("location: ../firstphp/signup.html?errorinvalidemailusername.");
           exit();
         }
         else if (!filter_var($email , FILTER_VALIDATE_EMAIL)){
-            header("location: ../firstphp/index.php?errorinvalidemailusername.");
+            header("location: ../firstphp/signup.html?errorinvalidemailusername.");
             exit();
         }
         else if(!preg_match("/^(a-ZA-ZO-Z9)*$/", $username)) {
-          header("location: ../firstphp/index.php?errorinvalidemailusername.");
+          header("location: ../firstphp/signup.html?errorinvalidemailusername.");
           exit();
         }
         else {
           $sql="SELECT username FROM users WHERE username=?";
           $stmt= mysqli_stmt_init($conn);
           if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("location: ../firstphp/index.php?=errorsqlerror");
+            header("location: ../firstphp/signup.html?=errorsqlerror");
             exit();
           }
         }
