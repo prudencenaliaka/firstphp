@@ -1,0 +1,28 @@
+h2,label{
+  color: hotpink;
+  font-size: 30px;
+}
+input[type=text], input[type=password]{
+  background-color: #121212;
+  border: 2px solid hotpink;
+  border-radius: 25px;
+  color: white;
+}
+button[type=submit]{
+  background-color: #121212;
+  border: 2px solid hotpink;
+  border-radius: 25px;
+}
+
+.container{
+  text-align: center;
+  padding-top: 100px
+}
+body {
+  background: #121212;
+}
+
+p{
+font-size: 20px;
+color: purple;
+}
