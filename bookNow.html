@@ -6,10 +6,89 @@
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/homepage.css" type="text/css">
+    <script type="text/javascript" src="js/scripts.js"></script>
   </head>
   <body>
-<h2 style="text-align:center">Book Your Ticket Now.</h2>
-    <div class="div4">
+<h4 id="hed4" style="margin-left:140px; color:#FF8C00;">Book Your Ticket Now.</h4>
+<div class="myform">
+<form id="reservation" method="post" action="">
+    <section id="seats">
+      <div class="row">
+      <div class="column">
+        <input id="seat-1" class="seat-select" type="checkbox" value="2" name="seat[]"  placeholder="1"  onclick="selct()"/>
+        <label for="seat-1" class="seat">1</label>
+      </div>
+      <div class="column">
+      <input id="seat-2" class="seat-select" type="checkbox" value="2" name="seat[]"  placeholder="1"/>
+      <label for="seat-2" class="seat">2</label>
+    </div>
+    <div class="column">
+    <input id="seat-driver" class="seat-select" type="checkbox" value="2" name="seat[]"  placeholder="1"/>
+    <label for="seat-driver" class="seat">Driver</label>
+  </div>
+</div>
+  <div class="row">
+    <div class="column">
+      <input id="seat-3" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-3" class="seat">3</label>
+    </div>
+    <div class="column">
+      <input id="seat-4" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-4" class="seat">4</label>
+    </div>
+    <div class="column">
+      <input id="seat-5" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-5" class="seat">5</label>
+    </div>
+  </div>
+    <div class="row">
+      <div>
+      <input id="seat-6" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-6" class="seat">6</label>
+    </div>
+      <div class="column">
+        <input id="seat-7" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+        <label for="seat-7" class="seat">7</label>
+      </div>
+      <div class="column">
+        <input id="seat-8" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+        <label for="seat-8" class="seat">8</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <input id="seat-9" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+        <label for="seat-9" class="seat">9</label>
+      </div>
+      <div class="column">
+        <input id="seat-10" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+        <label for="seat-10" class="seat">10</label>
+      </div>
+      <div class="column">
+        <input id="seat-11" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+        <label for="seat-11" class="seat">11</label>
+      </div>
+    </div>
+    <div class="row">
+    <div class="column">
+      <input id="seat-12" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-12" class="seat">12</label>
+    </div>
+    <div class="column">
+      <input id="seat-13" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-13" class="seat">13</label>
+    </div>
+    <div class="">
+      <input id="seat-14" class="seat-select" type="checkbox" value="2" name="seat[]" placeholder="2"/>
+      <label for="seat-14" class="seat">14</label>
+    </div>
+    </div>
+    </section>
+    <button type='submit' name='select seat' value='submit-query' style="color:white; background-color:#FF8C00; border-radius:25px; border:2px solid white;" onclick="selct()"/>select seat</button>
+  </form>
+  </div>
+
+    <div class="div9">
       <form action="book.php" method="post">
 
       <div class="form-group">
@@ -29,9 +108,8 @@
         <label>Message of payment</label>
       <input type="text" placeholder="paste-the-message-here"  name="message" required>
       </div>
-      <button type='submit' name='submit' value='submit' style="color:hotpink; background-color:blue; border-radius:25px; border:2px solid hotpink;"/>submit</button>
+      <button type='submit' name='submit' value='submit' style="color:white; background-color:#FF8C00; border-radius:25px; border:2px solid white;"/>submit</button>
       </form>
     </div>
-
   </body>
 </html>
