@@ -1,3 +1,28 @@
+.myform{
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: 300px;
+}
+.one{
+  margin-bottom: 20px;
+}
+
+.seat {
+    float: left;
+    display: block;
+    margin: 5px;
+    background: #FF8C00;
+    width: 50px;
+    height: 50px;
+}
+
+.seat-select {
+    display: none;
+}
+
+.seat-select:checked+.seat {
+    background: purple;
+}
 .footer-copyright{
 margin-bottom: 0px;
 }
@@ -5,7 +30,7 @@ margin-bottom: 0px;
   float:left;
 }
 .hed1,.span1{
-  color: hotpink;
+  color: #FF8C00;
 }
 header{
   width:100%;
@@ -14,42 +39,46 @@ header{
 a:hover{
   color: white;
 }
-.div4{
-  margin-left: 200px;
-  margin-bottom:300px;
+.div9{
+  background-color: white;
+  margin-left: 150px;
   font-size: 20px;
+  color: #FF8C00;
 }
-.div4 input[type=text], input[type=tel],textarea{
-  background-color: blue;
-  border: 2px solid hotpink;
+.div9 input[type=text], input[type=tel],textarea{
+  background-color:#FF8C00;
+  border: 2px solid #FF8C00;
   border-radius: 25px;
   color: white;
 }
 nav{
   margin-bottom: 30px;
 }
+a{
+  color:#FF8C00;
+}
 nav a{
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border: 2px solid blue;
-  margin-left: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  border: 2px solid #FF8C00;
+  margin-left: 60px;
   border-radius: 25px;
-  font-weight: bolder;
-  font-size: 20px;
+
+  font-size: 12px;
 }
 .div4{
   margin-top: 30px;
-  background-color: blue;
+  background-color: #FF8C00;
   width: 800px;
   color: white;
   text-align: center;
   border-radius: 25px;
   padding-top: 30px;
 }
-.sec1{
-  width: 800px;
+table{
+  width: 20%;
 }
 table{
   background-color: white;
@@ -65,7 +94,7 @@ th,td{
 .div5{
   width: 600px;
   color: white;
-  background-color: blue;
+  background-color: #FF8C00;
   text-align: center;
   border-radius: 25px;
   margin-top: 30px;
@@ -73,27 +102,27 @@ th,td{
 }
 .div1{
   float:left;
-  width: 400px;
-  height:360px;
-  background-color: blue;
+  width: 350px;
+  background-color: #FF8C00;
   text-align: center;
   border-radius: 25px;
   margin-bottom: 30px;
+  margin-left: 50px;
 }
 .div2{
-  float: right;
-  width: 400px;
-  height:360px;
-  background-color: blue;
+  float: left;
+  width: 200px;
+  background-color:#FF8C00;
   text-align: center;
   border-radius: 25px;
   margin-bottom: 30px;
+  margin-left: 150px;
 }
-h4{
-  color: hotpink;
+.heading{
+  color: black;
 }
 h2,h3{
-  color: hotpink;
+  color: white;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
@@ -109,7 +138,7 @@ hover:: h2,h3{
   to { width: 100% }
 }
 p span{
-  color: hotpink;
+  color: #FF8C00;
 
 }
 p,h5{
@@ -124,11 +153,8 @@ h3{
   height:400;
   width:300;
 }
-body{
-  background: #121212;
-}
+
 .main{
-  background: #121212;
   width:70%;
   margin: 0 auto;
 }
